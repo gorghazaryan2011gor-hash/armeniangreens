@@ -1,0 +1,1312 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Купить травы и пряности из Армении оптом | Мистер Вкус — Armenian Greens</title>
+  <meta name="description" content="Натуральные горные травы, специи и приправы бренда «Мистер Вкус» из Армении. Прямые поставки со склада от 12 штук.">
+  <meta name="keywords" content="травы из армении, купить специи оптом, цитрон чабер кондари, сванская соль, хмели сунели, армянские приправы, мистер вкус">
+
+  <style>
+    :root {
+      --bg-main: #0f1412;
+      --bg-card: #18221e;
+      --primary: #52b788;
+      --primary-light: #74c69d;
+      --accent-gold: #d4af37;
+      --text-main: #f3f4f6;
+      --text-muted: #9ca3af;
+      --border-color: #263830;
+      --radius: 12px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    }
+
+    body {
+      background-color: var(--bg-main);
+      color: var(--text-main);
+      line-height: 1.5;
+    }
+
+    .container {
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    header {
+      background: rgba(15, 20, 18, 0.95);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--border-color);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px 0;
+    }
+
+    .brand-logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      color: #fff;
+    }
+
+    .brand-badge {
+      background: var(--accent-gold);
+      color: #111;
+      font-weight: 900;
+      font-size: 0.9rem;
+      padding: 4px 8px;
+      border-radius: 6px;
+      letter-spacing: 1px;
+    }
+
+    .brand-title {
+      font-size: 1.3rem;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+    }
+
+    .brand-title span {
+      color: var(--primary);
+    }
+
+    .btn-nav {
+      background: var(--primary);
+      color: #0f1412;
+      text-decoration: none;
+      padding: 8px 18px;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 0.85rem;
+      transition: background 0.2s;
+    }
+
+    .btn-nav:hover {
+      background: var(--primary-light);
+    }
+
+    .hero {
+      text-align: center;
+      padding: 50px 0 35px;
+    }
+
+    .hero-tag {
+      display: inline-block;
+      border: 1px solid var(--accent-gold);
+      color: var(--accent-gold);
+      font-size: 0.85rem;
+      font-weight: 600;
+      padding: 5px 16px;
+      border-radius: 30px;
+      margin-bottom: 16px;
+    }
+
+    .hero h1 {
+      font-size: 2.6rem;
+      font-weight: 800;
+      margin-bottom: 14px;
+      line-height: 1.2;
+    }
+
+    .hero h1 span {
+      color: var(--primary);
+    }
+
+    .hero p {
+      max-width: 700px;
+      margin: 0 auto;
+      color: var(--text-muted);
+      font-size: 1.05rem;
+    }
+
+    /* Преимущества и условия */
+    .features-row {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+      margin: 40px 0 45px;
+    }
+
+    .feature-box {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius);
+      padding: 18px;
+      text-align: center;
+    }
+
+    .feature-box .icon {
+      font-size: 1.7rem;
+      margin-bottom: 6px;
+    }
+
+    .feature-box h4 {
+      font-size: 0.95rem;
+      color: #fff;
+      margin-bottom: 4px;
+    }
+
+    .feature-box p {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    /* Фильтры */
+    .filters {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 30px;
+    }
+
+    .filter-btn {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      color: var(--text-muted);
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+
+    .filter-btn.active,
+    .filter-btn:hover {
+      background: var(--primary);
+      color: #0f1412;
+      font-weight: 600;
+      border-color: var(--primary);
+    }
+
+    /* Карточки */
+    .catalog-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 20px;
+      margin-bottom: 80px;
+    }
+
+    .card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.2s ease, border-color 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      border-color: var(--primary);
+    }
+
+    .card-thumb {
+      width: 100%;
+      aspect-ratio: 3 / 4;
+      background: #111a16;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-bottom: 1px solid var(--border-color);
+      overflow: hidden;
+    }
+
+    .card-thumb img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      display: block;
+    }
+
+    .card-body {
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+
+    .card-body h3 {
+      font-size: 1.05rem;
+      margin-bottom: 6px;
+      color: #fff;
+    }
+
+    .card-desc {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      margin-bottom: 16px;
+      flex-grow: 1;
+    }
+
+    .card-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-top: 1px solid var(--border-color);
+      padding-top: 12px;
+    }
+
+    .card-price {
+      font-size: 1.3rem;
+      font-weight: 800;
+      color: #fff;
+    }
+
+    .card-price span {
+      font-size: 0.85rem;
+      color: var(--primary-light);
+    }
+
+    .btn-buy {
+      background: var(--primary);
+      color: #0f1412;
+      border: none;
+      padding: 8px 14px;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 0.85rem;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    .btn-buy:hover {
+      background: var(--primary-light);
+    }
+
+    footer {
+      border-top: 1px solid var(--border-color);
+      padding: 30px 0;
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.85rem;
+    }
+
+    /* Модалка корзины */
+    .order-modal {
+      display: none;
+      position: fixed;
+      top: 0; left: 0; width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.75);
+      backdrop-filter: blur(4px);
+      z-index: 2000;
+      align-items: center;
+      justify-content: center;
+      padding: 16px;
+    }
+
+    .order-modal.active {
+      display: flex;
+    }
+
+    .order-modal-content {
+      background: #18221e;
+      border: 1px solid var(--border-color);
+      width: 100%;
+      max-width: 460px;
+      border-radius: 14px;
+      padding: 22px;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+      max-height: 90vh;
+      overflow-y: auto;
+    }
+
+    .order-modal-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 16px;
+    }
+
+    .order-modal-header h3 {
+      color: #fff;
+      font-size: 1.15rem;
+    }
+
+    .order-close-btn {
+      background: transparent;
+      border: none;
+      color: var(--text-muted);
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+
+    .cart-items-wrapper {
+      max-height: 180px;
+      overflow-y: auto;
+      margin-bottom: 12px;
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 8px;
+    }
+
+    .cart-item-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 6px 0;
+      font-size: 0.85rem;
+    }
+
+    .cart-item-controls {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .cart-qty-btn {
+      background: var(--border-color);
+      color: #fff;
+      border: none;
+      width: 26px;
+      height: 26px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: 700;
+    }
+
+    .cart-qty-btn:hover {
+      background: var(--primary);
+      color: #111;
+    }
+
+    .cart-progress-box {
+      background: rgba(239, 68, 68, 0.15);
+      border: 1px solid #ef4444;
+      color: #fca5a5;
+      font-size: 0.85rem;
+      padding: 10px;
+      border-radius: 8px;
+      margin-bottom: 14px;
+      text-align: center;
+    }
+
+    .cart-progress-box.completed {
+      background: rgba(82, 183, 136, 0.15);
+      border-color: var(--primary);
+      color: var(--primary-light);
+    }
+
+    .order-input-group {
+      margin-bottom: 12px;
+    }
+
+    .order-input-group label {
+      display: block;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      margin-bottom: 4px;
+    }
+
+    .order-input-group input,
+    .order-input-group select,
+    .order-input-group textarea {
+      width: 100%;
+      padding: 10px;
+      background: #0f1412;
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      color: #fff;
+      font-size: 0.9rem;
+      font-family: inherit;
+    }
+
+    .order-input-group textarea {
+      resize: none;
+      height: 60px;
+    }
+
+    .order-summary-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 0;
+      border-top: 1px solid var(--border-color);
+      margin-bottom: 12px;
+      color: var(--text-muted);
+    }
+
+    .order-summary-row strong {
+      color: var(--primary);
+      font-size: 1.2rem;
+    }
+
+    .order-submit-btn {
+      width: 100%;
+      padding: 12px;
+      background: var(--primary);
+      color: #0f1412;
+      border: none;
+      border-radius: 8px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+
+    .order-submit-btn:disabled {
+      background: #2b3a33;
+      color: #6b7280;
+      cursor: not-allowed;
+    }
+
+    .order-status-text {
+      margin-top: 10px;
+      font-size: 0.85rem;
+      text-align: center;
+      display: none;
+    }
+
+    /* Плавающая кнопка корзины */
+    .cart-floating-btn {
+      position: fixed;
+      bottom: 92px;
+      right: 24px;
+      width: 58px;
+      height: 58px;
+      background-color: var(--primary);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+      cursor: pointer;
+      z-index: 999;
+      border: none;
+      font-size: 1.4rem;
+      transition: transform 0.2s;
+    }
+
+    .cart-floating-btn:hover {
+      transform: scale(1.08);
+    }
+
+    .cart-badge-count {
+      position: absolute;
+      top: -4px;
+      right: -4px;
+      background: #ef4444;
+      color: #fff;
+      font-size: 0.75rem;
+      font-weight: 800;
+      padding: 2px 7px;
+      border-radius: 12px;
+      border: 2px solid var(--bg-main);
+    }
+
+    /* Чат Formspree */
+    .chat-bubble-btn {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      width: 58px;
+      height: 58px;
+      background-color: var(--primary);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+      cursor: pointer;
+      z-index: 1000;
+      border: none;
+      font-size: 1.5rem;
+    }
+
+    .chat-window {
+      position: fixed;
+      bottom: 92px;
+      right: 24px;
+      width: 340px;
+      background: #18221e;
+      border: 1px solid var(--border-color);
+      border-radius: 14px;
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.6);
+      display: none;
+      flex-direction: column;
+      overflow: hidden;
+      z-index: 1000;
+    }
+
+    .chat-window.open { display: flex; }
+
+    .chat-header {
+      background: #111a16;
+      border-bottom: 1px solid var(--border-color);
+      padding: 14px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .chat-header h4 { font-size: 0.9rem; color: #fff; }
+    .chat-header p { font-size: 0.75rem; color: var(--text-muted); }
+    .chat-close { background: transparent; border: none; color: var(--text-muted); font-size: 1.3rem; cursor: pointer; }
+    .chat-body { padding: 14px; }
+    .chat-field { margin-bottom: 10px; }
+    .chat-field label { display: block; font-size: 0.75rem; color: var(--text-muted); margin-bottom: 4px; }
+    .chat-field input, .chat-field textarea {
+      width: 100%; padding: 9px; background: #0f1412; border: 1px solid var(--border-color);
+      color: #fff; border-radius: 8px; font-size: 0.85rem; font-family: inherit;
+    }
+    .chat-field textarea { resize: none; height: 70px; }
+    .chat-submit {
+      width: 100%; background: var(--primary); color: #0f1412; border: none;
+      padding: 10px; border-radius: 8px; font-weight: 700; cursor: pointer;
+    }
+    .chat-status { margin-top: 8px; font-size: 0.8rem; text-align: center; display: none; }
+
+    @media (max-width: 640px) {
+      .hero h1 { font-size: 1.9rem; }
+      .chat-window { width: calc(100vw - 32px); right: 16px; bottom: 85px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <nav>
+        <a href="#" class="brand-logo">
+          <span class="brand-badge">МВ</span>
+          <div class="brand-title">Armenian<span>Greens</span></div>
+        </a>
+        <a href="#catalog" class="btn-nav">В каталог</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <section class="hero">
+      <span class="hero-tag">✨ Премиум качество из Армении</span>
+      <h1>Коллекция пряностей и трав<br><span>«Мистер Вкус»</span></h1>
+      <p>Высокогорные сборы, чистые специи и авторские приправы. Прямые поставки со склада.</p>
+    </section>
+
+    <!-- Условия и преимущества -->
+    <section class="features-row">
+      <div class="feature-box">
+        <div class="icon">💳</div>
+        <h4>100% Предоплата</h4>
+        <p>Работаем по полной оплате перед сборкой и отправкой заказа</p>
+      </div>
+
+      <div class="feature-box">
+        <div class="icon">📞</div>
+        <h4>Контактные данные</h4>
+        <p>
+          +374 33 986969 Армения<br>
+          +7 961 023 48 88 Россия<br>
+                Whatsapp
+        </p>
+      </div>
+
+      <div class="feature-box">
+        <div class="icon">📦</div>
+        <h4>Заказ от 12 штук</h4>
+        <p>Минимальная партия для оформления доставки — от 12 единиц</p>
+      </div>
+
+      <div class="feature-box">
+        <div class="icon">🏔️</div>
+        <h4>Горный сбор</h4>
+        <p>Экологически чистые районы Армении</p>
+      </div>
+
+      <div class="feature-box">
+        <div class="icon">🌿</div>
+        <h4>100% Чистота</h4>
+        <p>Без муки, красителей и спенда</p>
+      </div>
+
+      <div class="feature-box">
+        <div class="icon">⚡</div>
+        <h4>Быстрый заказ</h4>
+        <p>Отправка напрямую с нашего склада</p>
+      </div>
+    </section>
+
+    <!-- Фильтры -->
+    <div class="filters">
+      <button class="filter-btn active" data-filter="all">Все (24)</button>
+      <button class="filter-btn" data-filter="herbs">Травы и зелень</button>
+      <button class="filter-btn" data-filter="mixes">Приправы и смеси</button>
+      <button class="filter-btn" data-filter="peppers">Перцы</button>
+      <button class="filter-btn" data-filter="spices">Пряности и овощи</button>
+    </div>
+
+    <!-- Каталог товаров -->
+    <section class="catalog-grid" id="catalog">
+
+      <!-- 1 -->
+      <article class="card" data-category="mixes">
+        <div class="card-thumb"><img src="shashlik.png" alt="Приправа для шашлыка"></div>
+        <div class="card-body">
+          <h3>Приправа для шашлыка (140 г)</h3>
+          <p class="card-desc">Семейный рецепт из Армении. Экологично и чисто, премиум качество.</p>
+          <div class="card-footer">
+            <div class="card-price">635 <span>₽</span></div>
+            <button class="btn-buy" data-name="Приправа для шашлыка (140 г)" data-price="635">➕ В корзину</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- 2 -->
+      <article class="card" data-category="spices">
+        <div class="card-thumb"><img src="luk.png" alt="Лук жареный хрустящий"></div>
+        <div class="card-body">
+          <h3>Лук жареный хрустящий (100 г)</h3>
+          <p class="card-desc">Золотистый хрустящий лук высшего сорта без горечи.</p>
+          <div class="card-footer">
+            <div class="card-price">813 <span>₽</span></div>
+            <button class="btn-buy" data-name="Лук жареный хрустящий (100 г)" data-price="813">➕ В корзину</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- 3 -->
+      <article class="card" data-category="spices">
+        <div class="card-thumb"><img src="zira.png" alt="Зира цельная"></div>
+        <div class="card-body">
+          <h3>Зира (Кумин) цельная (160 г)</h3>
+          <p class="card-desc">Свежий урожай, натуральный яркий аромат без добавок.</p>
+          <div class="card-footer">
+            <div class="card-price">818 <span>₽</span></div>
+            <button class="btn-buy" data-name="Зира цельная (160 г)" data-price="818">➕ В корзину</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- 4 -->
+      <article class="card" data-category="herbs">
+        <div class="card-thumb"><img src="citron_pack.png" alt="Цитрон горный чабер"></div>
+        <div class="card-body">
+          <h3>Цитрон горный (Чабер) (300 г)</h3>
+          <p class="card-desc">Сушёный горный сбор в упаковке для кафе и ресторанов.</p>
+          <div class="card-footer">
+            <div class="card-price">3 300 <span>₽</span></div>
+            <button class="btn-buy" data-name="Цитрон горный чабер (300 г)" data-price="3300">➕ В корзину</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- 5 -->
+      <article class="card" data-category="spices">
+        <div class="card-thumb"><img src="utsho.png" alt="Уцхо-сунели"></div>
+        <div class="card-body">
+          <h3>Уцхо-сунели молотый (150 г)</h3>
+          <p class="card-desc">Пажитник голубой молотый. Без муки и спенда, мягкий вкус.</p>
+          <div class="card-footer">
+            <div class="card-price">1 500 <span>₽</span></div>
+            <button class="btn-buy" data-name="Уцхо-сунели молотый (150 г)" data-price="1500">➕ В корзину</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- 6 -->
+      <article class="card" data-category="mixes">
+        <div class="card-thumb"><img src="svan_salt.png" alt="Сванская соль"></div>
+        <div class="card-body">
+          <h3>Сванская соль (170 г)</h3>
+          <p class="card-desc">На основе морской соли, со свежим чесноком и травами.</p>
+          <div class="card-footer">
+            <div class="card-price">422 <span>₽</span></div>
+            <button class="btn-buy" data-name="Сванская соль (170 г)" data-price="422">➕ В корзину</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- 7 -->
+      <article class="card" data-category="herbs">
+        <div class="card-thumb"><img src="basil_pack.png" alt="Базилик листовой"></div>
+        <div class="card-body">
+          <h3>Базилик листовой (250 г)</h3>
+          <p class="card-desc">Фиолетовый сушеный лист из Армении. Ресторанный объем.</p>
+          <div class="card-footer">
+            <div class="card-price">2 963 <span>₽</span></div>
+            <button class="btn-buy" data-name="Базилик листовой (250 г)" data-price="2963">➕ В корзину</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- 8 -->
+      <article class="card" data-category="herbs">
+        <div class="card-thumb"><img src="basil_jar.png" alt="Базилик банка"></div>
+        <div class="card-body">
+          <h3>Базилик фиолетовый (50 г)</h3>
+          <p class="card-desc">Отборный лист в фирменной герметичной банке.</p>
+          <div class="card-footer">
+            <div class="card-price">1 600 <span>₽</span></div>
+            <button class="btn-buy" data-name="Базилик банка (50 г)" data-price="1600">➕ В корзину</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- 9 -->
+      <article class="card" data-category="spices">
+        <div class="card-thumb"><img src="turmeric.png" alt="Куркума молотая"></div>
+        <div class="card-body">
+          <h3>Куркума молотая (180 г)</h3>
+          <p class="card-desc">Чистый помол без примесей муки и красителей. Импорт Индия.</p>
+          <div class="card-footer">
+            <div class="card-price">490 <span>₽</span></div>
+            <button class="btn-buy" data-name="Куркума молотая (180 г)" data-price="490">➕ В корзину</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- 10 -->
+      <article class="card" data-category="peppers">
+        <div class="card-thumb"><img src="chili_ground.png" alt="Чили красный острый"></div>
+        <div class="card-body">
+          <h3>Чили красный острый (150 г)</h3>
+          <p class="card-desc">Острожгучий помол из Армении. Без добавления паприки.</p>
+          <div class="card-footer">
+            <div class="card-price">1 173 <span>₽</span></div>
+            <button class="btn-buy" data-name="Чили красный молотый (150 г)" data-price="1173">➕ В корзину</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- 11 -->
+      <article class="card" data-category="spices">
+        <div class="card-thumb"><img src="coriander.png" alt="Кориандр дробленый"></div>
+        <div class="card-body">
+          <h3>Кориандр дробленый (120 г)</h3>
+          <p class="card-desc">Сильный чистый аромат для мясных блюд и маринадов.</p>
+          <div class="card-footer">
+            <div class="card-price">520 <span>₽</span></div>
+            <button class="btn-buy" data-name="Кориандр дробленый (120 г)" data-price="520">➕ В корзину</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- 12 -->
+      <article class="card" data-category="herbs">
+        <div class="card-thumb"><img src="kinza.png" alt="Кинза сушеная"></div>
+        <div class="card-body">
+          <h3>Кинза сушёная (30 г)</h3>
+          <p class="card-desc">Собрана в Армении. Только листочки, без жестких веток.</p>
+          <div class="card-footer">
+            <div class="card-price">1 056 <span>₽</span></div>
+            <button class="btn-buy" data-name="Кинза сушёная (30 г)" data-price="1056">➕ В корзину</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- 13 -->
+      <article class="card" data-category="herbs">
+        <div class="card-thumb"><img src="parsley.png" alt="Петрушка сушеная"></div>
+        <div class="card-body">
+          <h3>Петрушка сушёная (40 г)</h3>
+          <p class="card-desc">Экологически чистый продукт, насыщенный свежий аромат.</p>
+          <div class="card-footer">
+            <div class="card-price">205 <span>₽</span></div>
+            <button class="btn-buy" data-name="Петрушка сушёная (40 г)" data-price="205">➕ В корзину</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- 14 -->
+      <article class="card" data-category="mixes">
+        <div class="card-thumb"><img src="chicken.png" alt="Приправа для курицы"></div>
+        <div class="card-body">
+          <h3>Приправа для курицы (180 г)</h3>
+          <p class="card-desc">Купаж пряностей для золотистой хрустящей корочки.</p>
+          <div class="card-footer">
+            <div class="card-price">657 <span>₽</span></div>
+            <button class="btn-buy" data-name="Приправа для курицы (180 г)" data-price="657">➕ В корзину</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- 15 -->
+      <article class="card" data-category="mixes">
+        <div class="card-thumb"><img src="adjika.png" alt="Аджика грузинская"></div>
+        <div class="card-body">
+          <h3>Аджика грузинская (160 г)</h3>
+          <p class="card-desc">Огненно-жгучая смесь специй по традиционному рецепту.</p>
+          <div class="card-footer">
+            <div class="card-price">735 <span>₽</span></div>
+            <button class="btn-buy" data-name="Аджика грузинская (160 г)" data-price="735">➕ В корзину</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- 16 -->
+      <article class="card" data-category="peppers">
+        <div class="card-thumb"><img src="chili_flakes.png" alt="Чили хлопья"></div>
+        <div class="card-body">
+          <h3>Чили хлопья (120 г)</h3>
+          <p class="card-desc">Крупные дробленые хлопья острого перца без консервантов.</p>
+          <div class="card-footer">
+            <div class="card-price">1 260 <span>₽</span></div>
+            <button class="btn-buy" data-name="Чили хлопья (120 г)" data-price="1260">➕ В корзину</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- 17 -->
+      <article class="card" data-category="spices">
+        <div class="card-thumb"><img src="garlic.png" alt="Чеснок сушеный"></div>
+        <div class="card-body">
+          <h3>Чеснок сушёный (180 г)</h3>
+          <p class="card-desc">Гранулированный чеснок. Мягкий вкус без тяжелого запаха.</p>
+          <div class="card-footer">
+            <div class="card-price">480 <span>₽</span></div>
+            <button class="btn-buy" data-name="Чеснок сушёный (180 г)" data-price="480">➕ В корзину</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- 18 -->
+      <article class="card" data-category="peppers">
+        <div class="card-thumb"><img src="black_pepper_corn.png" alt="Перец черный горошек"></div>
+        <div class="card-body">
+          <h3>Перец чёрный горошек (180 г)</h3>
+          <p class="card-desc">Крупный калибр 550 высокой плотности, отборный сбор.</p>
+          <div class="card-footer">
+            <div class="card-price">480 <span>₽</span></div>
+            <button class="btn-buy" data-name="Перец чёрный горошек (180 г)" data-price="480">➕ В корзину</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- 19 -->
+      <article class="card" data-category="mixes">
+        <div class="card-thumb"><img src="hmeli.png" alt="Хмели-сунели"></div>
+        <div class="card-body">
+          <h3>Хмели-сунели (140 г)</h3>
+          <p class="card-desc">Не острая классическая приправа с бархатным ароматом трав.</p>
+          <div class="card-footer">
+            <div class="card-price">716 <span>₽</span></div>
+            <button class="btn-buy" data-name="Хмели-сунели (140 г)" data-price="716">➕ В корзину</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- 20 -->
+      <article class="card" data-category="herbs">
+        <div class="card-thumb"><img src="thyme.png" alt="Чабрец горный"></div>
+        <div class="card-body">
+          <h3>Чабрец горный (60 г)</h3>
+          <p class="card-desc">Собран в горах Армении. Сильный аромат для мяса и чая.</p>
+          <div class="card-footer">
+            <div class="card-price">1 373 <span>₽</span></div>
+            <button class="btn-buy" data-name="Чабрец горный (60 г)" data-price="1373">➕ В корзину</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- 21 -->
+      <article class="card" data-category="peppers">
+        <div class="card-thumb"><img src="paprika.png" alt="Перец сладкий молотый"></div>
+        <div class="card-body">
+          <h3>Перец красный сладкий (150 г)</h3>
+          <p class="card-desc">Качественная паприка мелкого помола без ГМО и красителей.</p>
+          <div class="card-footer">
+            <div class="card-price">1 100 <span>₽</span></div>
+            <button class="btn-buy" data-name="Перец красный сладкий (150 г)" data-price="1100">➕ В корзину</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- 22 -->
+      <article class="card" data-category="herbs">
+        <div class="card-thumb"><img src="citron_jar.png" alt="Цитрон Розмарин"></div>
+        <div class="card-body">
+          <h3>Цитрон / Розмарин (50 г)</h3>
+          <p class="card-desc">Собран в горах Армении. Отборные крупные листочки в банке.</p>
+          <div class="card-footer">
+            <div class="card-price">1 450 <span>₽</span></div>
+            <button class="btn-buy" data-name="Цитрон Розмарин (50 г)" data-price="1450">➕ В корзину</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- 23 -->
+      <article class="card" data-category="herbs">
+        <div class="card-thumb"><img src="mint.png" alt="Мята горная"></div>
+        <div class="card-body">
+          <h3>Мята горная цельная (50 г)</h3>
+          <p class="card-desc">Цельные отборные листья. Освежающий вкус с высоким ментолом.</p>
+          <div class="card-footer">
+            <div class="card-price">799 <span>₽</span></div>
+            <button class="btn-buy" data-name="Мята горная (50 г)" data-price="799">➕ В корзину</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- 24 -->
+      <article class="card" data-category="peppers">
+        <div class="card-thumb"><img src="black_pepper_ground.png" alt="Перец черный молотый"></div>
+        <div class="card-body">
+          <h3>Перец чёрный молотый (200 г)</h3>
+          <p class="card-desc">Из зёрен крупной фракции. Древесный аромат с цитрусовой нотой.</p>
+          <div class="card-footer">
+            <div class="card-price">400 <span>₽</span></div>
+            <button class="btn-buy" data-name="Перец чёрный молотый (200 г)" data-price="400">➕ В корзину</button>
+          </div>
+        </div>
+      </article>
+
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© 2026 armeniangreens.com — «Мистер Вкус». Доставка со склада.</p>
+    </div>
+  </footer>
+
+  <!-- Плавающая кнопка корзины -->
+  <button class="cart-floating-btn" id="openCartBtn" aria-label="Открыть корзину">
+    🛒 <span class="cart-badge-count" id="cartCountBadge">0</span>
+  </button>
+
+  <!-- Модальное окно общей корзины и заказа -->
+  <div id="cartModal" class="order-modal">
+    <div class="order-modal-content">
+      <div class="order-modal-header">
+        <h3>🛒 Корзина заказа</h3>
+        <button class="order-close-btn" id="closeCartModal">&times;</button>
+      </div>
+
+      <div class="cart-items-wrapper" id="cartItemsContainer"></div>
+
+      <div class="cart-progress-box" id="cartProgressAlert">
+        Добавьте ещё <strong id="itemsToMinCount">12</strong> шт. до минимального заказа (от 12 шт.).
+      </div>
+
+      <form id="cartCheckoutForm">
+        <div class="order-input-group">
+          <label>Ваше имя:</label>
+          <input type="text" id="orderCustomerName" placeholder="Арам" required>
+        </div>
+
+        <div class="order-input-group">
+          <label>Номер телефона:</label>
+          <input 
+            type="tel" 
+            id="orderCustomerPhone" 
+            placeholder="+7 (999) 123-45-67" 
+            maxlength="20"
+            required
+          >
+        </div>
+
+        <div class="order-input-group">
+          <label>Где удобнее связаться для оплаты?</label>
+          <select id="orderMessenger">
+            <option value="WhatsApp">WhatsApp</option>
+            <option value="Telegram">Telegram</option>
+            <option value="Звонок">Обычный звонок</option>
+            <option value="Другое">Другое</option>
+          </select>
+        </div>
+
+        <div class="order-input-group">
+          <label>Город и адрес доставки (или пункт СДЭК):</label>
+          <textarea id="orderCustomerAddress" placeholder="г. Москва, ул. Ленина, д. 5..." required></textarea>
+        </div>
+
+        <div class="order-summary-row">
+          <span>Товаров: <strong id="cartSummaryTotalQty" style="color:#fff;">0 шт.</strong></span>
+          <span>Итого: <strong id="cartSummaryTotalPrice">0 ₽</strong></span>
+        </div>
+
+        <button type="submit" class="order-submit-btn" id="cartCheckoutBtn" disabled>
+          Минимум 12 шт. для заказа
+        </button>
+        <div id="cartStatusMsg" class="order-status-text"></div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Чат Formspree -->
+  <button class="chat-bubble-btn" id="chatToggle" aria-label="Открыть чат">💬</button>
+
+  <div class="chat-window" id="chatWindow">
+    <div class="chat-header">
+      <div>
+        <h4>Поддержка клиентов</h4>
+        <p>Ответим вам на email</p>
+      </div>
+      <button class="chat-close" id="chatClose">&times;</button>
+    </div>
+    <div class="chat-body">
+      <form id="supportForm" action="https://formspree.io/f/xbgjvarv" method="POST">
+        <div class="chat-field">
+          <label for="clientEmail">Ваш Email</label>
+          <input type="email" id="clientEmail" name="email" placeholder="example@mail.ru" required>
+        </div>
+        <div class="chat-field">
+          <label for="clientMsg">Сообщение</label>
+          <textarea id="clientMsg" name="message" placeholder="Задайте вопрос..." required></textarea>
+        </div>
+        <button type="submit" class="chat-submit" id="supportSubmitBtn">Отправить</button>
+        <div class="chat-status" id="supportChatStatus"></div>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    // ТВОИ КЛЮЧИ TELEGRAM
+    const TG_BOT_TOKEN = "8839603742:AAFPpMIvA3baiHnRJ7SVRsXPlAYDDYU3qj0";
+    const TG_CHAT_ID = "7423416215";
+
+    let CART = {};
+    const MIN_ORDER_UNITS = 12;
+
+    const cartModal = document.getElementById('cartModal');
+    const openCartBtn = document.getElementById('openCartBtn');
+    const closeCartModal = document.getElementById('closeCartModal');
+    const cartBadge = document.getElementById('cartCountBadge');
+    const cartContainer = document.getElementById('cartItemsContainer');
+    const cartAlert = document.getElementById('cartProgressAlert');
+    const checkoutBtn = document.getElementById('cartCheckoutBtn');
+    const totalQtyText = document.getElementById('cartSummaryTotalQty');
+    const totalPriceText = document.getElementById('cartSummaryTotalPrice');
+    const checkoutForm = document.getElementById('cartCheckoutForm');
+    const statusMsg = document.getElementById('cartStatusMsg');
+    const phoneInput = document.getElementById('orderCustomerPhone');
+
+    
+      phoneInput.addEventListener('input', (e) => {
+      // Оставляет только цифры, +, скобки, пробелы и тире
+      e.target.value = e.target.value.replace(/[^0-9+()\s-]/g, '');
+    });
+
+    // Фильтры категорий
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const filter = btn.getAttribute('data-filter');
+
+        document.querySelectorAll('.card').forEach(card => {
+          card.style.display = (filter === 'all' || card.getAttribute('data-category') === filter) 
+            ? 'flex' 
+            : 'none';
+        });
+      });
+    });
+
+    // Добавление в корзину
+    document.querySelectorAll('.btn-buy').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const name = btn.getAttribute('data-name');
+        const price = parseInt(btn.getAttribute('data-price'), 10);
+
+        if (!CART[name]) {
+          CART[name] = { price: price, count: 0 };
+        }
+        CART[name].count += 1;
+        updateCartUI();
+
+        btn.textContent = '✓ В корзине';
+        setTimeout(() => { btn.textContent = '➕ В корзину'; }, 800);
+      });
+    });
+
+    function updateCartUI() {
+      let totalCount = 0;
+      let totalPrice = 0;
+      cartContainer.innerHTML = '';
+
+      const items = Object.keys(CART);
+
+      if (items.length === 0) {
+        cartContainer.innerHTML = '<p style="color:var(--text-muted); font-size:0.85rem; padding: 10px 0;">Корзина пока пуста. Добавьте товары из каталога.</p>';
+      }
+
+      items.forEach(name => {
+        const item = CART[name];
+        if (item.count <= 0) return;
+
+        totalCount += item.count;
+        totalPrice += item.price * item.count;
+
+        const row = document.createElement('div');
+        row.className = 'cart-item-row';
+        row.innerHTML = `
+          <div style="flex-grow:1; padding-right:10px;">
+            <div>${name}</div>
+            <small style="color:var(--text-muted);">${item.price} ₽ / шт.</small>
+          </div>
+          <div class="cart-item-controls">
+            <button type="button" class="cart-qty-btn" onclick="changeCount('${name}', -1)">-</button>
+            <span style="font-weight:700; width:22px; text-align:center;">${item.count}</span>
+            <button type="button" class="cart-qty-btn" onclick="changeCount('${name}', 1)">+</button>
+          </div>
+        `;
+        cartContainer.appendChild(row);
+      });
+
+      cartBadge.textContent = totalCount;
+      totalQtyText.textContent = totalCount + ' шт.';
+      totalPriceText.textContent = totalPrice.toLocaleString('ru-RU') + ' ₽';
+
+      if (totalCount >= MIN_ORDER_UNITS) {
+        cartAlert.className = 'cart-progress-box completed';
+        cartAlert.innerHTML = `✅ Минимальный объем набран (${totalCount} шт.)! Можете заказывать.`;
+        checkoutBtn.disabled = false;
+        checkoutBtn.textContent = 'Подтвердить заказ';
+      } else {
+        cartAlert.className = 'cart-progress-box';
+        const diff = MIN_ORDER_UNITS - totalCount;
+        cartAlert.innerHTML = `Добавьте ещё <strong>${diff}</strong> шт. до минимального заказа (от 12 шт.).`;
+        checkoutBtn.disabled = true;
+        checkoutBtn.textContent = `Минимум 12 шт. (сейчас ${totalCount})`;
+      }
+    }
+
+    window.changeCount = function(name, delta) {
+      if (CART[name]) {
+        CART[name].count += delta;
+        if (CART[name].count <= 0) {
+          delete CART[name];
+        }
+        updateCartUI();
+      }
+    };
+
+    openCartBtn.addEventListener('click', () => {
+      updateCartUI();
+      cartModal.classList.add('active');
+    });
+
+    closeCartModal.addEventListener('click', () => {
+      cartModal.classList.remove('active');
+    });
+
+    // Отправка в Telegram
+    checkoutForm.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      checkoutBtn.disabled = true;
+      checkoutBtn.textContent = 'Отправка...';
+
+      const name = document.getElementById('orderCustomerName').value.trim();
+      const phone = phoneInput.value.trim();
+      const messenger = document.getElementById('orderMessenger').value;
+      const address = document.getElementById('orderCustomerAddress').value.trim();
+
+      let itemsList = '';
+      let totalUnits = 0;
+      let totalPrice = 0;
+
+      for (let key in CART) {
+        const it = CART[key];
+        const sum = it.price * it.count;
+        totalUnits += it.count;
+        totalPrice += sum;
+        itemsList += `• ${key} — ${it.count} шт. (${sum} ₽)\n`;
+      }
+
+      const message = `🔥 *НОВЫЙ ЗАКАЗ (ОПТ / МИКС)!*\n\n` +
+                      `📦 *Состав корзины:*\n${itemsList}\n` +
+                      `🔢 *Всего банок:* ${totalUnits} шт.\n` +
+                      `💰 *Итого к оплате:* ${totalPrice.toLocaleString('ru-RU')} ₽\n\n` +
+                      `👤 *Покупатель:* ${name}\n` +
+                      `📞 *Телефон:* \`${phone}\`\n` +
+                      `💬 *Связь через:* *${messenger}*\n` +
+                      `📍 *Доставка/СДЭК:* ${address}\n\n` +
+                      `⚠️ _100% предоплата перед отправкой_`;
+
+      try {
+        const res = await fetch(`https://api.telegram.org/bot${TG_BOT_TOKEN}/sendMessage`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            chat_id: TG_CHAT_ID,
+            text: message,
+            parse_mode: 'Markdown'
+          })
+        });
+
+        if (res.ok) {
+          statusMsg.style.display = 'block';
+          statusMsg.style.color = '#52b788';
+          statusMsg.textContent = '✅ Заказ успешно оформлен! Скоро свяжемся.';
+          CART = {};
+          updateCartUI();
+          checkoutForm.reset();
+          setTimeout(() => {
+            cartModal.classList.remove('active');
+            statusMsg.style.display = 'none';
+          }, 3500);
+        } else {
+          throw new Error();
+        }
+      } catch {
+        statusMsg.style.display = 'block';
+        statusMsg.style.color = '#ef4444';
+        statusMsg.textContent = 'Ошибка отправки. Попробуйте еще раз.';
+      } finally {
+        checkoutBtn.disabled = false;
+        checkoutBtn.textContent = 'Подтвердить заказ';
+      }
+    });
+
+    // Formspree поддержка
+    const chatToggle = document.getElementById('chatToggle');
+    const chatWindow = document.getElementById('chatWindow');
+    const chatClose = document.getElementById('chatClose');
+    const supportForm = document.getElementById('supportForm');
+    const supportChatStatus = document.getElementById('supportChatStatus');
+    const supportSubmitBtn = document.getElementById('supportSubmitBtn');
+
+    chatToggle.addEventListener('click', () => chatWindow.classList.toggle('open'));
+    chatClose.addEventListener('click', () => chatWindow.classList.remove('open'));
+
+    supportForm.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      supportSubmitBtn.disabled = true;
+      supportSubmitBtn.textContent = 'Отправка...';
+
+      try {
+        const res = await fetch(supportForm.action, {
+          method: 'POST',
+          body: new FormData(supportForm),
+          headers: { 'Accept': 'application/json' }
+        });
+
+        if (res.ok) {
+          supportChatStatus.style.display = 'block';
+          supportChatStatus.style.color = '#52b788';
+          supportChatStatus.textContent = 'Спасибо! Сообщение отправлено.';
+          supportForm.reset();
+          setTimeout(() => {
+            chatWindow.classList.remove('open');
+            supportChatStatus.style.display = 'none';
+          }, 3500);
+        } else {
+          throw new Error();
+        }
+      } catch {
+        supportChatStatus.style.display = 'block';
+        supportChatStatus.style.color = '#ef4444';
+        supportChatStatus.textContent = 'Ошибка отправки.';
+      } finally {
+        supportSubmitBtn.disabled = false;
+        supportSubmitBtn.textContent = 'Отправить';
+      }
+    });
+  </script>
+</body>
+</html>
